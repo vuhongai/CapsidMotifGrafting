@@ -1,0 +1,14 @@
+../../rosetta/rosetta_src_2020.08.61146_bundle/main/source/bin/remodel.default.linuxgccrelease \
+    -s ./input/3ux1_AB_repack.pdb \
+    -run::chain A \
+    -jd2:no_output \
+    -ex1 -ex2 \
+    -use_input_sc \
+    -num_trajectory 400 \
+    -save_top 5 \
+    -use_clusters false \
+    -find_neighbors \
+    -remodel:domainFusion:insert_segment_from_pdb ./input/4um9_motif1.pdb \
+    -remodel:blueprint ./input/3ux1_AB.blueprint \
+    -out:path:all ./output_design \
+    -out:prefix cap9_VR4_4um9_try1 > cap9_VR4_4um9_try1.log
