@@ -7,7 +7,7 @@ Scripts for running the design and analysis described in the manuscript.
 
 ## Motif grafting by RosettaRemodel
 
-The commands to graft human aVb6 binding motifs (4um9, 5ffo, and 5nem) into AAV9 capsid can be found in the [`./Rosetta_Design_VR4/AAV9_[motif]`](Rosetta_Design_VR4) directory. To design, run the bash file in each sub-folder, which will generate maximum 5 best designs (sequence+structure) in `./Rosetta_Design_VR4/AAV9_[motif]/output_design`. In the manuscript, we generated ~550-750 such designed sequence-structure pairs for each binding motif, then scored them by p(seq) (ESM2) and p(seq|structure) (ProteinMPNN) to select the best sequences for experimental validation.
+The commands to graft human aVb6 binding motifs (4um9, 5ffo, and 5nem) into AAV9 capsid can be found in the [`./Rosetta_Design_VR4/AAV9_[motif]`](Rosetta_Design_VR4) directory. To run the RosettaRemodel, [rosetta software](https://downloads.rosettacommons.org/downloads/) is required. To design, run the bash file in each sub-folder, which will generate maximum 5 best designs (sequence+structure) in `./Rosetta_Design_VR4/AAV9_[motif]/output_design`. In the manuscript, we generated ~550-750 such designed sequence-structure pairs for each binding motif, then scored them by p(seq) (ESM2) and p(seq|structure) (ProteinMPNN) to select the best sequences for experimental validation.
 ```bash
 bash ./Rosetta_Design_VR4/AAV9_[motif]/run_design_[motif].sh
 ```
