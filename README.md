@@ -12,7 +12,7 @@ The commands to graft human aVb6 binding motifs (4um9, 5ffo, and 5nem) into AAV9
 bash ./Rosetta_Design_VR4/AAV9_[motif]/run_design_[motif].sh
 ```
 
-# Scoring the Rosetta outputs by ESM2 and ProteinMPNN
+## Scoring the Rosetta outputs by ESM2 and ProteinMPNN
 
 The notebooks to score the (sequence, structure) pairs generated from RosettaRemodel can be found in the [`./notebook_ESM2_MPNN/`](notebook_ESM2_MPNN) directory. The notebooks require `torch`, [`esm2`](https://github.com/facebookresearch/esm), and [`ProteinMPNN`](https://github.com/dauparas/ProteinMPNN). To install, run the following commands:
 
